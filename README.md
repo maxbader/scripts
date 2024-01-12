@@ -1,2 +1,3 @@
 # scripts
-Useful bash and python scripts
+## Exif
+[exif](exif.md)
