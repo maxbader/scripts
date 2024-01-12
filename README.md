@@ -1,3 +1,2 @@
-# scripts
-## Exif
-[exif](exif.md)
+# Scripts
+## [Exif](exif.md)
