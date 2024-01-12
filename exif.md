@@ -11,5 +11,9 @@
   exiftool 2*.jpg '-FileName<CreateDate'       -ext jpg -d "%Y-%m-%d--%H-%M-%S-%%-.c-markus.%%e"
   exiftool 2*.mp4 "-FileName<CreateDate"       -ext mp4 -d "%Y-%m-%d--%H-%M-%S-%%-.c-markus.%%e"
   ```
-- Python programm to change year only #exif-change-year-only
--
+- Python programm to change/check year only
+  ```
+  find . -iname "*.JPG" -type f -exec ./exif-check-year-only.py {} 2010 2>cp.err \;
+  find . -iname "*.JPG" -type f -exec ./exif-set-year-only.py {} 1980 2>cp.err \;
+  ```
+  
